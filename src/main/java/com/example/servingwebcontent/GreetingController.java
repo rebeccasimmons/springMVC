@@ -13,9 +13,4 @@ public class GreetingController {
 		model.addAttribute("user", user);
 		return "welcome";
 	}
-	@GetMapping("/goodbye")
-	public String goodbye(@RequestParam(name="goodbye", required=false, defaultValue="farewell") String goodbye, Model model) {
-		model.addAttribute("goodbye", goodbye);
-		return "goodbye";
-	}
 }
