@@ -33,36 +33,46 @@
 <div align="center">
     <h1>User Registration</h1>
     <form action="#" th:action="@{/register}" method="post" th:object="${user}">
-        <label>Full name:</label>
-        <input type="text" th:field="*{name}" /><br/>
- 
-        <label>E-mail:</label>
-        <input type="text" th:field="*{email}" /><br/>
- 
-        <label>Password:</label>
-        <input type="password" th:field="*{password}" /><br/>
- 
-        <label>Birthday (yyyy-mm-dd):</label>
-        <input type="date" th:field="*{birthday}" /><br/>
- 
-        <label>Gender:</label>
-        <input type="radio" th:field="*{gender}" value="Male" />Male
-        <input type="radio" th:field="*{gender}" value="Female" />Female<br/>
- 
-        <label>Profession:</label>
-        <select th:field="*{profession}">
-            <option th:each="p : ${listProfession}" th:value="${p}" th:text="${p}" />
-        </select>
-        <br/>
- 
-        <label>Married?</label>
-        <input type="checkbox" th:field="*{married}" /><br/>
- 
-        <label>Note:</label>
-        <textarea rows="5" cols="25" th:field="*{note}"></textarea>
-        <br/>
- 
-        <button type="submit">Register</button>    
+    	<table>
+    		<tr>
+    			<td>Name:</td>
+    			<td><input type="text" minlength="2" th:field="*{name}" /></td>
+    		</tr>
+    		<tr>
+    			<td>Email:</td>
+    			<td><input type="email" minlength="10" th:field="*{email}" /></td>
+    		</tr>
+    		<tr>
+    			<td>Password:</td>
+    			<td><input type="password" minlength="8" th:field="*{password}" /></td>
+    		</tr>
+    		<tr>
+    			<td>Birthday:</td>
+    			<td><input type="date" min="1920-01-01" max="2020-12-31" th:field="*{birthday}" /></td>
+    		<tr>
+    			<td>Gender:</td>
+        		<td><input type="radio" th:field="*{gender}" value="Male" />Male</td>
+        		<td><input type="radio" th:field="*{gender}" value="Female" />Female</td>
+    		</tr>
+    		<tr>
+    			<td>Profession:</td>
+    			<td><select th:field="*{profession}" required>
+            		<option th:each="p : ${listProfession}" th:value="${p}" th:text="${p}" />
+        			</select>
+        		</td>
+        	</tr>
+        	<tr>
+        		<td>Married?</td>
+        		<td><input type="checkbox" th:field="*{married}" /></td>
+        	</tr>
+        	<tr>
+        		<td>Note:</td>
+ 				<td><textarea rows="5" cols="25" th:field="*{note}"></textarea></td>
+ 			</tr>
+ 			<tr>
+ 				<td><input type="submit" value="Submit" /></td>
+ 			</tr>
+    	</table>
     </form>
 </div>
 </body>
