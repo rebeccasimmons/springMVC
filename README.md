@@ -4,7 +4,7 @@ This is a registration form that was developed with Spring MVC
 
 ## Instructions on Running the Application
 
-To run this application, you will need to have an IDE installed on your computer. I have used **Eclipse** to develop this form. You will also need to use a web browser, **any browser will work**. 
+To run this application, you will need to have an IDE installed on your computer. I have used **Eclipse** to develop this form. You will also need to use a web browser, **any browser** will work. 
 
 ## Input Requirements
 
