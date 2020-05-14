@@ -1,4 +1,4 @@
-# Registration Form
+# User Registration Form
 
 This is a registration form that was developed with Spring MVC
 
