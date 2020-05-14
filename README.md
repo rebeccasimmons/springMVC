@@ -13,3 +13,8 @@ For this application to be submitted, you must enter a name *(that has more than
 ## About the Application
 
 First, you will be directed to the **home page** and you must click on a button that directs you to the **registration form page**. On the registration form page, it gathers information that is entered by the user. Before submitting the form, it makes sure that all input are in the correct format. Once submitted, the form takes you to **registration success page**, and will display all information that the user has entered from the previous page.
+
+## Link to YouTube
+
+Here is my link to the YouTube video of my project:
+https://youtu.be/NOZzYq2xtUM
